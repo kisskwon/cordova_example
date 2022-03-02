@@ -1,0 +1,18 @@
+{
+  "cordova-plugin-calendar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-calendar@5.1.6"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-syncup": {
+    "source": {
+      "type": "local",
+      "path": "/Users/kiseokkwon/AndroidStudioProjects/cordova-dev/node_modules/cordova-plugin-syncup"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

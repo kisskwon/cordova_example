@@ -1,0 +1,18 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "com.test.cordovadev"
+    },
+    "cordova-plugin-syncup": {
+      "PACKAGE_NAME": "com.test.cordovadev"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,69 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Calendar\"><param name=\"android-package\" value=\"nl.xservices.plugins.Calendar\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Syncup\"><param name=\"android-package\" value=\"com.lge.syncup.Syncup\" /></feature>",
+              "count": 2
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_CALENDAR\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_CALENDAR\" />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "com.test.cordovadev"
+    },
+    "cordova-plugin-syncup": {
+      "PACKAGE_NAME": "com.test.cordovadev"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-calendar.Calendar",
+      "file": "plugins/cordova-plugin-calendar/www/Calendar.js",
+      "pluginId": "cordova-plugin-calendar",
+      "clobbers": [
+        "Calendar"
+      ]
+    },
+    {
+      "id": "cordova-plugin-syncup.Syncup",
+      "file": "plugins/cordova-plugin-syncup/www/Syncup.js",
+      "pluginId": "cordova-plugin-syncup",
+      "clobbers": [
+        "cordova.plugins.Syncup"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-calendar": "5.1.6",
+    "cordova-plugin-syncup": "0.0.1"
+  }
+}
