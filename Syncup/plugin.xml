@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-syncup"
+    version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Syncup</name>
+    <js-module name="Syncup" src="www/Syncup.js">
+        <clobbers target="cordova.plugins.Syncup" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Syncup">
+                <param name="android-package" value="com.lge.syncup.Syncup" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/Syncup.java" target-dir="src/com/lge/syncup" />
+    </platform>
+</plugin>

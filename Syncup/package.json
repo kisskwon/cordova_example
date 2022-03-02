@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-syncup",
+  "version": "0.0.1",
+  "cordova": {
+    "id": "cordova-plugin-syncup",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
