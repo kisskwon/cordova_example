@@ -27,7 +27,7 @@ public class Syncup extends CordovaPlugin {
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
             Toast.makeText(cordova.getContext(), message, Toast.LENGTH_SHORT).show();
-            callbackContext.success(message);
+            callbackContext.success("Toast: " + message);
         } else {
             callbackContext.error("Expected one non-empty string argument.");
         }

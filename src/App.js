@@ -5,7 +5,6 @@ import logo from "./logo.svg";
 function App() {
   const [inputText, setInputText] = useState();
 
-  console.log("kks", window);
   const onChange = (e) => {
     setInputText(e.target.value);
   };
